@@ -1,0 +1,15 @@
+{
+  "undef": true,
+  "unused": true,
+  "strict":"global",
+  "globals": {
+    "console": true,
+    "document":true,
+    "$":true,
+    "Piece":true,
+    "Grid":true,
+    "Cell":true,
+    "window":true,
+    "prompt":true
+  }
+}

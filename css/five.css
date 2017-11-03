@@ -1,0 +1,163 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     -moz-box.sizing: border-box;
+}
+
+html {
+     height: 100%;
+}
+
+body {
+     background: rgb(221, 220, 222);
+     font-family: sans-serif;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+}
+
+header {
+     width: 100%;
+}
+
+header nav {
+     width: 90%;
+     max-width: 1000px;
+     margin: 20px auto;
+     background: rgba(30, 47, 50, 0.7);
+}
+
+.menu {
+     display: none;
+}
+
+header nav ul {
+     overflow: hidden;
+     list-style: none;
+}
+
+header nav ul li {
+     float: left;
+}
+
+header nav ul li a {
+     color: rgb(255, 255, 255);
+     padding: 20px;
+     display: inline-block;
+     text-decoration: none;
+}
+
+li {
+     color: rgb(255, 255, 255);
+}
+
+header nav ul li span {
+     margin-right: 10px;
+}
+
+header nav ul li:hover {
+     background: rgb(108, 156, 149);
+}
+
+p {}
+
+#container-play {
+     background: rgb(0, 128, 115);
+}
+
+.next {
+     float: left;
+     margin-left: 10px;
+}
+
+.score {
+     float: right;
+     margin-right: 10px;
+}
+
+#container-game {
+     background: rgb(17, 215, 234);
+     display: flex;
+     padding: 2%;
+     height: 100%;
+     margin: 20px 10px 20px;
+     border: 3px groove rgb(184, 54, 64);
+     border-radius: 10px;
+}
+
+.grid {
+     width: 100%;
+     background: rgb(170, 193, 178);
+     display: flex;
+     flex-direction: column;
+}
+
+.row {
+     border-color: 5px solid rgb(163, 220, 204);
+     display: flex;
+     flex: 1;
+}
+
+.col {
+     border: 3px double rgb(74, 20, 25);
+     align-content: center;
+}
+
+.col, .initialCol, .finalCol {
+     flex: 1;
+}
+
+.initialCol {
+     margin-left: 10px;
+}
+
+.finalCol {
+     margin-right: 10px;
+}
+
+.col.selected {
+     outline: 2px solid red;
+}
+
+.next {}
+
+.nextBall {
+     width: 15%;
+     padding-left: 5px;
+     padding-right: 1px
+}
+
+@media (max-width:600px) {
+     header nav {
+          width: 70%;
+          height: 100%;
+          left: -100%;
+          margin: 0;
+          position: fixed;
+     }
+     header nav ul li {
+          display: block;
+          float: none;
+          border-bottom: 1px solid rgba(108, 156, 149, 0.3);
+     }
+     .menu {
+          display: block;
+          width: 100%;
+          background: rgb(219, 218, 222);
+     }
+     .menu .menuIcon {
+          display: block;
+          padding: 20px;
+          background: rgb(108, 156, 149);
+          color: rgb(255, 255, 255);
+          text-decoration: none;
+          font-weight: bold;
+          font-size: 25px;
+     }
+     .menu span {
+          float: right;
+          font-size: 30px;
+     }
+}
